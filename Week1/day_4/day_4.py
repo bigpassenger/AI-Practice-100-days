@@ -197,3 +197,7 @@ Key Points About Sets:
 
 # print(words)
 ##########################################################################################################
+reversed = ['Book', 'Weed', 'Wood', 'Road', 'Wood', 'Wood']
+reversed.reverse()
+reversed_set = set(reversed)
+print(reversed_set)
