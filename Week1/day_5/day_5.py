@@ -1,7 +1,7 @@
-first = "Hello"
-second = "World"
-result = first + " " + second
-print(result)
+# first = "Hello"
+# second = "World"
+# result = first + " " + second
+# print(result)
 
 ########################## Spliting #############################
 
@@ -32,7 +32,7 @@ print(result)
 # cleaned_text = messy.strip()
 # print(cleaned_text)
 ########################## Regular Expressions #############################
-import re
+# import re
 
 """
 This code demonstrates the use of Python's `re` module for working with regular expressions.
