@@ -254,14 +254,38 @@ Tips:
 # except Exception as e:
 #     print(f"An unexpected error occurred: {e}")
 ############################## EXERCISE 3 Copy a content of a file and past it ############################################
-def read_copy(filename,filename2):
-    try:
-        with open(filename, 'r') as file:
-            content = file.readlines()
+# def read_copy(filename,filename2):
+#     try:
+#         with open(filename, 'r') as file:
+#             content = file.readlines()
 
-        with open(filename2, 'w') as file:
-            file.writelines(content)
-    except Exception as e:
-        print(f"An unexpected error occurred")
+#         with open(filename2, 'w') as file:
+#             file.writelines(content)
+#     except Exception as e:
+#         print(f"An unexpected error occurred")
 
-read_copy("sample.txt","sample2.txt")
+# read_copy("sample.txt","sample2.txt")
+# ############################## EXERCISE 4 The number of words ############################################
+# import string
+# def words_counter(splited_line,user_word):
+#     count = 0
+#     user_word = user_word.lower().strip(string.punctuation)
+#     for word in splited_line:
+#         if word.lower().strip(string.punctuation) == user_word:
+#             count += 1
+#     return count
+# def opener(filename,user_word):
+#     empty_dic = {}
+#     try:
+#         with open(filename, 'r') as file:
+#             lines = file.readlines()
+#             count_of_line = 1
+#             for line in lines:
+#                 splited_line = line.split()
+#                 counts = words_counter(splited_line,user_word)
+#                 empty_dic[f'Line{count_of_line}'] = counts
+#                 count_of_line += 1
+#         return empty_dic
+#     except Exception as e:
+#         print(f"An unexpected error occurred")
+
