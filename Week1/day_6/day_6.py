@@ -253,4 +253,15 @@ Tips:
 #             print(item)
 # except Exception as e:
 #     print(f"An unexpected error occurred: {e}")
-############################## EXERCISE 1 COUNT WORDS IN A FILE ############################################
+############################## EXERCISE 3 Copy a content of a file and past it ############################################
+def read_copy(filename,filename2):
+    try:
+        with open(filename, 'r') as file:
+            content = file.readlines()
+
+        with open(filename2, 'w') as file:
+            file.writelines(content)
+    except Exception as e:
+        print(f"An unexpected error occurred")
+
+read_copy("sample.txt","sample2.txt")
