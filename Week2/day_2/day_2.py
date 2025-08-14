@@ -39,14 +39,14 @@ Benefits:
 - Avoids unnecessary data replication.
 - Allows clean, vectorized code without explicit loops.
 """
-import numpy as np
+# import numpy as np
 
-arr = np.array([1,2,3])
-print(arr + 10)
+# arr = np.array([1,2,3])
+# print(arr + 10)
 
-matr = np.array([[1,2,3], [4, 5, 6]]) #shape (2, 3)
-vector = np.array([1, 0, 1]) #shape (, 3)
-print(matr + vector)
+# matr = np.array([[1,2,3], [4, 5, 6]]) #shape (2, 3)
+# vector = np.array([1, 0, 1]) #shape (, 3)
+# print(matr + vector)
 """
 Broadcasting rule:
 - matr.shape   = (2, 3)
@@ -216,5 +216,41 @@ Key Points:
 # random_integers = np.random.randint(0, 10, size=(2, 3))
 # print("Random Integers: \n", random_integers)
 
-############################## Hands-On Exercises #################################
+############################## Hands-On Exercises1 #################################
 
+# import numpy as np
+
+# matrix = np.array([[1, 2, 3],[4, 5, 6],[7, 8, 9]])
+# vector = np.array([1, 0, -1])
+
+# print(matrix*vector)
+############################## Hands-On Exercises1 #################################
+
+# import numpy as np
+
+# random_matrix  = np.random.randint(1, 51,(5,5))
+# print(random_matrix)
+# random_matrix[random_matrix<25] = 0
+# print(random_matrix)
+
+############################## Hands-On Exercises2 #################################
+
+# import numpy as np
+# random_matrix  = np.random.randint(1, 51,(3,3,3))
+
+
+# print("Standard Deviation: ", np.std(random_matrix, axis= 2))
+# print("Sum along rows: ", np.sum(random_matrix, axis = 1))
+# print("Sum along columns: ", np.sum(random_matrix, axis = 0))
+
+
+############################## Hands-On Exercises3 #################################
+
+# import numpy as np
+
+# random_matrix = np.random.randint(1, 51, (3,3))
+
+# print(random_matrix)
+# random_matrix[random_matrix % 2 == 0] = 0
+
+# print(random_matrix)
